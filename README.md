@@ -4,7 +4,7 @@ Prints the length on longest paths on DAG from a source node in O(n+m)
 # Describe the problem:
 The longest path problem can be represented using a graph. The idea is to find the longest simple path with no cycles on a given graph. The length can be calculated by counting edges between nodes our summing the weights of edges between nodes (1). This problem is NP-hard for general graphs (2). This problem also doesn’t have an optimal substructure property so dynamic programming and greedy is not an option (3)&(2). In Figure 1, the longest path from 1 to 5 is 1-2-3-4-5. However, the longest path from 2 to 5 is not 2-3-4-5, it is 2-1-3-4-5. Because of this characteristic you cannot break the problem into sub problems. A brute force approach of enumerating all possible paths then selecting the largest one is exponential and would reach 2^n possible paths. 
   
-  ![Figure 1](LongestPath/Images/Longest-Path-Graphs.png)
+  ![Figure 1](Longest-Path-Graphs.png)
 
   
 Figure 1: No Substructure for Longest Path Problem
@@ -25,7 +25,7 @@ Finding the longest path in a graph is helpful in many situations. The longest p
 
 # Running Solution:
 Sample Graph:
-	![Sample Graph](LongestPath/Images/Longest-Path-Graphs-(1).png)
+	![Sample Graph](Images/Longest-Path-Graphs-(1).png)
 	
 Sample Run:
 	![Demo](Images/sampleRun.gif)
